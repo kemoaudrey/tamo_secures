@@ -1,0 +1,80 @@
+/* EmployeeManagement.css */
+.data-table {
+    border-radius: 8px;
+    overflow: hidden; /* Ensures rounded corners */
+}
+
+.data-table th {
+    background-color: #FF6666;
+    color: #fff;
+    padding: 10px; /* Add padding for better appearance */
+    text-align: left; /* Align text to the left */
+}
+
+.data-table th, .data-table td {
+    border-bottom: 1px solid #ddd; /* Add a bottom border */
+    padding: 12px; /* Add padding to table cells */
+}
+
+.data-table tr:hover {
+    background-color: #f1f1f1; /* Highlight row on hover */
+}
+
+.data-table .pagination {
+    padding: 10px; /* Adjust pagination spacing */
+    background-color: #fff; /* Set background for pagination */
+    border-top: 1px solid #ddd; /* Border above pagination */
+}
+
+.data-table .pagination .react-pagination {
+    margin: 0; /* Remove margin from pagination */
+}
+
+/* EmployeeManagement.css */
+.search-input {
+    margin-bottom: 20px;
+    width: 300px;
+    padding: 10px;
+  }
+  
+  .qrcode-button {
+    background-color: #571729;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.qrcode-button:hover {
+    background-color: #d45252;
+}
+
+.qr-code-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 400px;
+    text-align: center;
+  }
+  
+  .qr-code-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+

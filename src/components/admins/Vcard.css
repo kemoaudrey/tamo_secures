@@ -1,0 +1,201 @@
+/* General container styling */
+.vcard-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    background-color: #f4f6f9;
+}
+
+/* Main vCard styling */
+.vcard {
+    position: relative; /* Enables absolute positioning of child elements */
+    width: 100%;
+    max-width: 450px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    text-align: center;
+    border-bottom: 4px solid #081abb;
+}
+
+/* Header section for employee name and job title */
+.item-header {
+    text-align: center;
+    padding-top: 20px;
+    margin-top: 70px; /* Adds space below logo */
+}
+
+/* Name and title styling */
+.card-title {
+    font-size: 1.6rem;
+    color: #333;
+    font-weight: bold;
+    /* margin-top: 5px; */
+}
+
+.card-subtitle {
+    font-size: 1.1rem;
+    color: #666;
+    margin: 5px 0 15px;
+}
+
+/* Divider style */
+.divider {
+    border: none;
+    border-top: 1px solid #060606;
+    margin: 20px 0;
+}
+
+/* Logo container styling - positioned in the top right corner */
+.logoContainer {
+    position: absolute;
+    top: 15px; /* Adjust to move the logo closer/further from the top */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust to center the logo */
+    width: 140px; /* Width of the container */
+    height: 70px; /* Height of the container */
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.logoContainer img {
+    width: 100%; /* Make image fill the container width */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: contain; /* Ensure the image fits within the container */
+}
+
+
+/* Enterprise logo styling */
+.enterprise-logo-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.employee-image-container {
+    text-align: center;
+    margin-top: 20px;
+
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  .employee-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #081abb;
+  }
+  
+
+/* Contact details styling */
+.vcard-functions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.vcard-functions a {
+    background-color: #081abb;
+    color: #ffffff;
+    padding: 8px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+}
+
+.vcard-functions a:hover {
+    background-color: #FF6666;
+}
+
+.vcard-functions a i {
+    margin-right: 8px;
+}
+
+/* Content section styling */
+.content-2 {
+    background: #f0b8b8;
+    border-radius: 8px;
+    padding: 12px;
+    margin: 8px 0;
+    text-align: left;
+}
+
+.content-2 p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #333;
+}
+.content-2 a {
+    color: #020407;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.content-2 i {
+    margin-right: 10px;
+    color: #d45252;
+}
+
+.floating-button {
+    position: absolute; /* Relative to the vCard */
+    bottom: 15px;
+    right: 15px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #d45252;
+    color: #fff;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.floating-button:hover {
+    background-color: #ff6666;
+}
+
+
+
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .vcard {
+        padding: 15px;
+    }
+
+    .card-title {
+        font-size: 1.4rem;
+    }
+
+    .card-subtitle {
+        font-size: 1rem;
+    }
+
+    .vcard-functions {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .vcard-functions a {
+        margin-top: 5px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .enterprise-logo {
+        width: 70px;
+        height: 70px;
+    }
+}
